@@ -1,0 +1,110 @@
+{
+  "app_id": "grocydocker",
+  "title": "Grocy",
+  "image": "linuxserver/grocy:4.7.1",
+  "repo_name": "grocy",
+  "mode": "wrapper",
+  "container_port": 8080,
+  "category": [
+    "Utilities"
+  ],
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/grocydocker/config",
+      "container": "/config"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai",
+    "GROCY_DATA_DIR": "/config/data"
+  },
+  "auth": "grocy",
+  "upstream_url": "https://github.com/grocy/grocy",
+  "upstream_license": "MIT",
+  "descript": "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder.",
+  "release_note": "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder.",
+  "important": "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet.",
+  "probe": {
+    "user_in_image": "(root)",
+    "entrypoint": [
+      "/init"
+    ],
+    "cmd": null,
+    "exposed_ports": [
+      80,
+      443
+    ],
+    "declared_volumes": [
+      "/config"
+    ],
+    "image_healthcheck": [],
+    "digest": "linuxserver/grocy@sha256:e4e34a0a84f407b1bcd2c3b6cd1999bf99bcad1defa8847adea7dc82a9cd6b8c",
+    "architecture": "x86_64",
+    "platforms": [
+      "x86_64",
+      "aarch64"
+    ],
+    "http_client_in_image": "curl",
+    "trial_run": {
+      "ok": true,
+      "http_code": "500",
+      "state": "running",
+      "paths": [],
+      "host_port": 18000,
+      "log_tail": "ing ownership of '/config/log': Operation not permitted\nchown: changing ownership of '/config/log/php': Operation not permitted\nchown: changing ownership of '/config/log/php/error.log': Operation not permitted\nchown: changing ownership of '/config/log/nginx': Operation not permitted\nchown: changing ownership of '/config/log/nginx/error.log': Operation not permitted\nchown: changing ownership of '/config/log/nginx/access.log': Operation not permitted\nchown: changing ownership of '/config/www': Operation not permitted\nchown: changing ownership of '/config/www/index.html': Operation not permitted\nchown: changing ownership of '/config/php': Operation not permitted\nchown: changing ownership of '/config/php/www2.conf': Operation not permitted\nchown: changing ownership of '/config/php/php-local.ini': Operation not permitted\nchown: changing ownership of '/config/keys': Operation not permitted\nchown: changing ownership of '/config/keys/cert.crt': Operation not permitted\nchown: changing ownership of '/config/keys/cert.key': Operation not permitted\nchown: changing ownership of '/config/.migrations': Operation not permitted\n2026/11/15 11:28:12 [warn] 223#223: the \"user\" directive makes sense only if the master process runs with super-user privileges, ignored in /config/nginx/nginx.conf:6\n[15-Nov-2026 11:28:13] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root\n[15-Nov-2026 11:28:13] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root",
+      "files_in_mounts": "/tmp/tosdocker-trial-1794742091/config/data/config.php\n/tmp/tosdocker-trial-1794742091/config/data/plugins/.placeholder\n/tmp/tosdocker-trial-1794742091/config/data/plugins/.gitignore\n/tmp/tosdocker-trial-1794742091/config/data/.htaccess\n/tmp/tosdocker-trial-1794742091/config/data/.gitignore"
+    },
+    "docker_hub": {},
+    "github": {
+      "owner": "linuxserver",
+      "repo": "docker-grocy",
+      "description": "A container for grocy - the ERP application for your kitchen https://grocy.info",
+      "license": "GPL-3.0",
+      "homepage": ""
+    }
+  },
+  "healthcheck": [
+    "CMD-SHELL",
+    "grep -q ':1F90' /proc/net/tcp6 || grep -q ':1F90' /proc/net/tcp"
+  ],
+  "platform": "x86_64",
+  "user": "1000:1000",
+  "publisher": "Moechz",
+  "compose_project": "grocydocker",
+  "github_repo": "grocy",
+  "upstream_version": "4.7.1",
+  "release_tag_prefix": "v",
+  "version": "4.7.1-1",
+  "help": "https://github.com/Moechz/grocy/issues",
+  "official": "https://github.com/grocy/grocy",
+  "license": "MIT",
+  "docker_socket": false,
+  "group_add": [],
+  "entrypoint_file": "src/entrypoint.sh",
+  "host_port": 8175,
+  "healthcheck_start_period": "45s",
+  "wrapper_note": "the LinuxServer image serves the app with nginx on port 80, which uid 1000\ncannot bind. This wrapper runs the same PHP application with the built-in PHP web\nserver on port 8080 and keeps the data folder on the mounted volume.",
+  "wrapper_note_readme": "- **Entrypoint wrapper**: serves the app with `php -S 0.0.0.0:8080` (nginx binds 80, unusable as uid 1000) and points `GROCY_DATA_DIR` at the mounted volume.",
+  "translations": {
+    "zh-cn": {
+      "descript": "Grocy 是自建的家庭管理工具：记录储藏室和冰箱里有什么、什么时候过期，管理购物清单、带库存消耗的食谱、家务任务、电池记录与价格历史。所有数据都存在应用数据目录里的本地 SQLite 数据库。",
+      "important": "需要 DockerEngine（缺失时应用中心会自动安装）。打开界面，选择 SQLite 完成初始化——数据库与配置保存在 DockerAppData/grocydockerdocker/config/data。初始化时记得设置时区。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。",
+      "release_note": "1. 首个版本：基于 Docker Hub（LinuxServer 镜像）的 Grocy 4.7.1，以非 root 容器运行。家庭库存、食谱与家务管理，SQLite 数据保存在应用数据目录。"
+    },
+    "zh-hk": {
+      "descript": "Grocy 是自建的家庭管理工具：記錄儲藏室和冰箱裡有什麼、什麼時候過期，管理購物清單、帶庫存消耗的食譜、家務任務、電池記錄與價格歷史。所有資料都存在應用資料目錄裡的本機 SQLite 資料庫。",
+      "important": "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟介面，選擇 SQLite 完成初始化——資料庫與設定保存在 DockerAppData/grocydockerdocker/config/data。初始化時記得設定時區。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。",
+      "release_note": "1. 首個版本：基於 Docker Hub（LinuxServer 映像）的 Grocy 4.7.1，以非 root 容器運行。家庭庫存、食譜與家務管理，SQLite 資料保存在應用資料目錄。"
+    }
+  },
+  "data_notes": "`/config/data` (mounted from `DockerAppData/grocydockerdocker/config/data`) holds `grocy.db` and the configuration.",
+  "design_notes": [
+    "**PHP built-in server.** nginx binds port 80, unusable as uid 1000; `php -S` serves the app on 8080.",
+    "**Data dir via env.** `GROCY_DATA_DIR` points the SQLite database at the mounted volume."
+  ],
+  "limitations": [
+    "- The built-in PHP server is single-threaded; fine for a household.",
+    "- Barcode scanning needs an extra app and API key configuration.",
+    "- The UI is plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+  ]
+}

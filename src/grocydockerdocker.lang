@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "grocydockerdocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[zh-cn]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy 是自建的家庭管理工具：记录储藏室和冰箱里有什么、什么时候过期，管理购物清单、带库存消耗的食谱、家务任务、电池记录与价格历史。所有数据都存在应用数据目录里的本地 SQLite 数据库。"
+release_note = "1. 首个版本：基于 Docker Hub（LinuxServer 镜像）的 Grocy 4.7.1，以非 root 容器运行。家庭库存、食谱与家务管理，SQLite 数据保存在应用数据目录。"
+important    = "需要 DockerEngine（缺失时应用中心会自动安装）。打开界面，选择 SQLite 完成初始化——数据库与配置保存在 DockerAppData/grocydockerdocker/config/data。初始化时记得设置时区。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。"
+
+[zh-hk]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy 是自建的家庭管理工具：記錄儲藏室和冰箱裡有什麼、什麼時候過期，管理購物清單、帶庫存消耗的食譜、家務任務、電池記錄與價格歷史。所有資料都存在應用資料目錄裡的本機 SQLite 資料庫。"
+release_note = "1. 首個版本：基於 Docker Hub（LinuxServer 映像）的 Grocy 4.7.1，以非 root 容器運行。家庭庫存、食譜與家務管理，SQLite 資料保存在應用資料目錄。"
+important    = "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟介面，選擇 SQLite 完成初始化——資料庫與設定保存在 DockerAppData/grocydockerdocker/config/data。初始化時記得設定時區。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。"
+
+[fr-fr]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[de-de]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[it-it]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[es-es]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[hu-hu]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ja-jp]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ko-kr]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pl-pl]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ru-ru]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[tr-tr]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pt-pt]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ar-sa]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[cs-cz]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[he-il]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[id-id]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nb-no]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nl-nl]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[sv-se]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[th-th]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[vi-vn]
+name         = "Grocy"
+auth         = "grocy"
+version      = "@@VERSION@@"
+descript     = "Grocy is a self-hosted household management tool: track what is in the pantry and fridge, what expires when, shopping lists, recipes with stock consumption, chores, a battery tracker and price history. Everything is stored in a local SQLite database in the application data folder."
+release_note = "1. First release: Grocy 4.7.1 from Docker Hub (LinuxServer image) as a non-root container. Household, stock, recipes and chores management with SQLite in the application data folder."
+important    = "Requires DockerEngine (installed automatically if missing). Open the UI, choose SQLite and finish the setup - the database and configuration live in DockerAppData/grocydockerdocker/config/data. Set the timezone in the setup wizard. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
